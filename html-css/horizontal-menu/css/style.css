@@ -1,0 +1,39 @@
+*{ margin: 0; padding: 0; user-select: none;}
+body
+{
+	background-color: darkblue;
+	color: floralwhite;
+}
+ul li, ul li a
+{
+	display: inline-block;
+}
+ul
+{
+	background-color: lightyellow;
+	text-align: right;
+	padding-top: 5px;
+}
+.active
+{
+	background-color: yellowgreen;
+}
+ul li a:hover
+{
+	color:  lightyellow;
+	background-color: darkblue;
+}
+ul li a 
+{
+	padding: 20px;
+    text-decoration: none;
+    font-family: comic sans-serif;
+    color: darkblue;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+}
+h1
+{
+	color: lightyellow;
+	margin: 10px;
+}

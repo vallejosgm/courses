@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOTTERY GAME</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/script.js"></script>
+</head>
+<body onload="lotteryGame()">
+	<audio id="myAudio" src="beep.mp3"></audio>
+	<div class="lottery-mean">
+		<H1>LOTTERY GAME</h1>	
+		<h2>Your Lottery Number</h2>
+		<div class="lottery">
+			<textarea id="lottoPicks" name="lotteryNumber"></textarea>
+			<button onclick="lotteryGame()" id="generateLotto">Generate your Lottery Number</button>
+		</div>
+	</div>
+</body>
+</html>

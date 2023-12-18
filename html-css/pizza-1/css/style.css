@@ -1,0 +1,57 @@
+*{ margin: 0; padding: 0; user-select: none;}
+ul li, ul li a, label
+{
+	display: inline-block;
+}
+input#about:checked + ul
+{
+	display: block;
+}
+ul
+{
+	background-color: cyan;
+	text-align: center;
+	padding-top: 5px;
+}
+.active
+{
+	background-color: white;
+}
+li.top-menu
+{
+	position: relative;
+}
+label
+{
+	cursor: pointer;
+}
+ul.sub-menu
+{
+	border: 1px solid black;
+	position: absolute;
+	top: 35px;
+	left: 10px;
+	display: none;
+}
+ul.sub-menu li a
+{
+	display: block;
+	border-radius: 0;
+}
+ul.sub-menu li
+{
+	display: block;
+}
+ul li a:hover, ul li label:hover
+{
+	color:  cyan;
+	background-color: black;
+}
+ul li a, label 
+{
+	padding: 10px;
+	text-decoration: none;
+	font-family: tahoma;
+	color: black;
+	border-radius: 5px 5px 0 0;
+}

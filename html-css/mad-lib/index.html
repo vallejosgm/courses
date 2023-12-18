@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mad-Libs Game</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+<body>
+	<h1>Input Your Word Choices</h1>
+	<h2>Fill in the blanks below with whatever words you like. When you're done, hit the "Submit!" button, and your choices will be inserted into the story.</h2>
+	<form id="form">
+		<div class="information-words">
+			<div class="information">
+				<div>
+					<label for="noun1">Noun #1  </label>
+					<input type="text" name="noun1" id="noun1" required>
+				</div>
+				<div>
+					<label for="noun2">Noun #2  </label>
+					<input type="text" name="noun2" id="noun2" required>
+				</div>
+				<div>
+					<label for="adjective1">Adjective #1      </label>
+					<input type="text" name="adjective1" id="adjective1" required>
+				</div>
+				<div>
+					<label for="adjective2">Adjective #2</label>
+					<input type="text" name="adjective2" id="adjective2" required>
+				</div>
+				<div>
+					<label for="verb1">Verb #1 </label>
+					<input type="text" name="verb1" id="verb1" required>
+				</div>
+				<div>
+					<label for="verb2">Verb #2 </label>
+					<input type="text" name="verb2" id="verb2" required>
+				</div>
+			</div>
+		</div>	
+		<div class="buttons">
+			<input type="submit" value="Submit">
+		</div>
+	</form>
+	<div id="results">
+		<H1>Mad-Libs</h1>	
+		<h2>Result of your story</h2>
+		<div class="story">
+			<p id="story-text"></p>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html> 

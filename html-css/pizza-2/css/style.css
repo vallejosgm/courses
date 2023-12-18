@@ -1,0 +1,122 @@
+*{ margin: 0; padding: 0; user-select: none;}
+body 
+{
+	background-color: rgb(243,211,157);
+}
+h1, p, h2, form
+{
+	margin: 20px;
+}
+div.tools-choose
+{
+	display: flex;
+    margin: 35px;
+}
+div.toppings, div.sizes, div.crusts
+{
+	width: 33%;
+}
+div.toppings input
+{
+	margin: .4rem;
+}
+div.personal-delivery
+{
+	margin: 35px;
+}
+div.personal, div.address
+{
+	display: flex;
+}
+label 
+{
+    font: 1rem 'Fira Sans', sans-serif;
+}
+textarea
+{
+	width: 600px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+}
+div.buttons input
+{
+	width: 77px;
+    height: 30px;
+}
+div.state
+{
+	position: relative;
+    margin: 1px 13px;
+}
+:required {
+  border-color: blue;
+  border-width: 2px;
+}
+ul li, ul li a, label
+{
+	display: inline-block;
+}
+input#about:checked + ul
+{
+	display: block;
+}
+ul
+{
+	background-color: rgb(162,171,53);
+	text-align: center;
+	padding-top: 5px;
+}
+.active
+{
+	background-color: white;
+}
+li.top-menu
+{
+	position: relative;
+}
+label
+{
+	cursor: pointer;
+}
+ul.sub-menu
+{
+	border: 1px solid black;
+	position: absolute;
+	top: 35px;
+	left: 10px;
+	display: none;
+}
+ul.sub-menu li a
+{
+	display: block;
+	border-radius: 0;
+}
+ul.sub-menu li
+{
+	display: block;
+}
+ul li a:hover, ul li label:hover
+{
+	color:  rgb(162,171,53);
+	background-color: black;
+}
+ul li a, label 
+{
+	padding: 10px;
+	text-decoration: none;
+	font-family: tahoma;
+	color: black;
+	border-radius: 5px 5px 0 0;
+}
+div.img-page
+{
+	text-align: center;
+}
+div.img-page img
+{
+	margin: 20px;
+    border-radius: 20px;
+    width: 500px;
+}

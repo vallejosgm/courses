@@ -1,0 +1,200 @@
+body
+{
+	background-color: darkblue;
+	color: floralwhite;
+}
+/* START PRESENTATION FORMAT */
+/*Arrange two boxes in a row*/
+div.container-row
+{
+	width: 100vw;
+	display: flex;
+	background-color: floralwhite;
+}
+/*Format for the two columns*/
+div.column
+{
+	position: relative;
+	margin: 40px 15%;
+	padding: 20px;
+	background-color: white;
+	width: 20%;
+	text-align: -webkit-center;
+	border: 2px solid darkblue;
+}
+/*Added formatting for left column*/
+#first
+{
+	background-color: black;
+}
+/*END OF PRESENTATION FORMAT*/
+
+/*POKEMON VOLTORB START*/
+/* Upper part of the body, it is a rectangle with very wide top and 
+bottom borders and suitably transformed by the border radius property */
+div.body-up
+{
+	position: relative;
+    top: 20px;
+    width: 207px;
+    border-top: 36px solid rgb(209,58,58);
+    border-bottom: 92px solid rgb(209,58,58);
+    border-radius: 50% 50% 50% 50% / 75% 75% 25% 25%;
+    z-index: 1;
+}
+/*Voltorb's eyes, use the z-index so that it would overlap some 
+elements and not others*/
+div.eye
+{
+	position: absolute;
+    width: 52px;
+    height: 30px;
+    background-color: white;
+    z-index: 2;
+    border: 3px solid black;
+}
+/* Transformation of the left eye. Helped with the web fancy border 
+radius to know the coordinates of the border-radius */
+#left
+{
+	top: 30px;
+	left: 39px;
+    border-radius: 0% 100% 59% 41% / 2% 97% 3% 98%;
+}
+/*This cover covers the excess of the left and right eye*/
+div.cover
+{
+	position: relative;
+    width: 0;
+    height: 0;
+}
+/*The cover is finished making this a triangle with the edges.
+The tricky thing about this is the transparent border on the left side*/
+div.el-1
+{
+    top: -3px;
+    border-top: 37px solid rgb(209,58,58);
+    border-left: 61px solid transparent;
+    left: -4px;
+    z-index: 3;
+}
+/*This simulates the black line of the left eye cover*/
+div.el-2
+{
+    top: -38px;
+    border-top: 36px solid black;
+    border-left: 58px solid transparent;
+    left: -5px;
+    z-index: 2;
+}
+/*It is a simple rectangle with smooth edges that simulates the pupils*/
+div.pupil
+{
+	position: relative;
+    top: -57px;
+    width: 3px;
+    height: 8px;
+    background: black;
+    border-radius: 5px;
+}
+/* Transformation of the right eye. Helped with the web 
+fancy border radius to know the coordinates of the border-radius */
+#right
+{
+	top: 33px;
+    left: 116px;
+    border-radius: 100% 0% 41% 59% / 97% 0% 100% 3%;
+} 
+/*The cover is finished making this a triangle with the edges.
+The tricky thing about this is the transparent border on the right side*/
+div.er-1
+{
+    top: -3px;
+    border-top: 34px solid rgb(209,58,58);
+    border-right: 62px solid transparent;
+    left: -8px;
+    z-index: 3;
+}
+/*This simulates the black line of the right eye cover*/
+div.er-2
+{
+    top: -37px;
+    border-top: 36px solid black;
+    border-right: 63px solid transparent;
+    left: -6px;
+    z-index: 2;
+}
+/* Bottom part of the body, it is a rectangle with very wide 
+top and bottom borders and suitably transformed by the border 
+radius property */
+div.body-down
+{
+    position: relative;
+    top: -20px;
+    width: 206px;
+    border-top: 36px solid white;
+    border-bottom: 92px solid white;
+    background-color: white;
+    border-radius: 50% 50% 50% 50% / 0% 0% 85% 85%;
+    z-index: 0;
+}
+/*END OF POKEMON VOLTORB*/
+
+/*START A POKEMON GO EGG*/
+/* The shape of the egg with a rectangle and the transformation
+into an egg with the help of border-radius */
+div.egg 
+{
+	display: block;
+    width: 156px;
+    height: 210px;
+    background-color: rgb(247, 238, 210);
+    border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
+}
+/*It is a bigger and black egg but placed in the back in such a 
+way that it looks like the black border*/
+div.shadow
+{
+	width: 158px;
+    height: 212px;
+    background-color: black;
+    padding: 1px;
+}
+/*Egg stain with a rectangle softened at its edges and 
+rotated with transform*/
+div.stain-border
+{
+    width: 8px;
+    height: 28px;
+    background: rgb(165, 199,133);
+    border-radius: 24% 67% 80% 35% / 62% 50% 118% 86%;
+    top: 23px;
+    position: relative;
+    left: -49px;
+    transform: rotate(33deg);
+}
+/*Same concept as stain-border*/
+div.stain
+{
+    width: 56px;
+    height: 76px;
+    background: rgb(165, 199,133);
+    border-radius: 33% 67% 58% 42% / 53% 50% 50% 47%;
+    top: 87px;
+    position: relative;
+    left: 18px;
+    transform: rotate(28deg);
+}
+/*Same as stain-little*/
+div.stain-little
+{
+    width: 15px;
+    height: 28px;
+    background: rgb(165, 199,133);
+    border-radius: 33% 67% 58% 42% / 53% 50% 50% 47%;
+    top: -16px;
+    position: relative;
+    left: 44px;
+    transform: rotate(-37deg);
+}
+/*END OF A POKEMON GO EGG*/

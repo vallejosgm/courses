@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<title>Gean Vallejos Pizzeria</title>
+</head>
+<body>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a class="active" href="order.html">Order</a></li>
+	</ul>
+	<h1>Order a to Gean Vallejos Pizza</h1>
+	<br><br>
+
+	<h2>Customize your pizza</h2>
+
+
+	<form method="post" action="https://www.stonecoldprofessor.com/pizza-order.php">
+		<input type="checkbox" name="toppings[]" value="sausage">Sausage
+		<input type="checkbox" name="toppings[]" value="fishies">Anchovies
+		<input type="checkbox" name="toppings[]" value="lots of dairy">Extra Cheese
+		<input type="checkbox" name="toppings[]" value="hearts">Fish Hearts
+
+		<br><br>
+
+		<input type="radio" name="size" value="Small">SM
+		<input type="radio" name="size" value="Medium">MD
+		<input type="radio" name="size" value="Large">LG
+
+		<br><br>
+
+		<select name="crust">
+			<option value="Thin">Thin
+				<option value="Thick">Thick
+					<option value="Ke">No Crust
+		</select>
+
+		<br><br>
+
+		<input type="reset" value="Clear">
+		<input type="submit" value="Send">
+
+		<br><br>
+	</form>
+	<img src="./img/pizza.jpg">
+</body>
+</html> 

@@ -1,0 +1,190 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; user-select: none;}
+body {
+    background: url(../img/ttt.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: black;
+    font-size: 80px;
+    font-family: fantasy;
+}
+
+h1
+{
+    text-align: center;
+    font-weight: 900;
+    color: gold;
+    margin: 20px;
+}
+
+div#form-container
+{
+    text-align: -webkit-center;
+}
+
+form
+{
+    margin: 20px;
+    width: 50%;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font: 3rem 'Fira Sans', sans-serif;
+    color: gold;
+    cursor: pointer;
+}
+
+input[type=text] 
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 40px;
+    resize: vertical;
+}
+
+div.buttons input
+{
+    background-color: rgb(212,46,32);
+    padding: 11px;
+    text-transform: uppercase;
+    font-family: 'system-ui';
+    letter-spacing: -2px;
+    font-weight: 700;
+    width: 240px;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+    margin: 20px auto;
+}
+
+div#tic-tac-toe
+{
+    display: none;
+}
+
+h2#game-message
+{    
+    background-color: rgb(212,46,32);
+    padding: 11px;
+    text-transform: uppercase;
+    font-family: 'system-ui';
+    letter-spacing: -4px;
+    font-weight: 700;
+    width: 800px;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+}
+
+div#game-central
+{
+    display: flex;
+    margin-top: 100px;
+}
+
+div#game-panel
+{
+    margin: 0 100px 0 auto;
+}
+
+div#game-board
+{
+    overflow: hidden;
+    width: 605px;
+    transform: rotate(45deg);
+}
+
+div[id^="row-"] 
+{
+    clear: both;
+}
+
+div[id^="row-"] img
+{
+    width: 100px;
+}
+
+div[id^="row-"] div
+{
+    border: 5px solid saddlebrown;
+    border-radius: 80px 80px 80px 80px;
+    font-weight: 800;
+    color: cornflowerblue;
+    color: tomato;
+    font-size: 145px;
+    height: 200px;
+    width: 200px;
+    float: left;
+    text-align: center;
+}
+
+div#row-1 div 
+{
+    border-top: none;
+}
+
+div#row-3 div 
+{
+    border-bottom: none;
+}
+
+div[id^="row-"] div:first-child 
+{
+    border-left: none;
+}
+
+div[id^="row-"] div:last-child 
+{
+    border-right: none;
+}
+
+button
+{
+    display: none;
+    background-color: rgb(212,46,32);
+    padding: 11px;
+    text-transform: uppercase;
+    font-family: 'system-ui';
+    letter-spacing: -2px;
+    font-weight: 700;
+    width: 240px;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+    margin: 20px auto;
+}
+
+div#score-board
+{
+    max-width: 50%;
+    color: white;
+    font-size: 35px;
+    margin: 250px 0;
+}
+
+div#score-board div
+{
+    
+    width: 800px;
+    text-align: center;
+}
+
+div#score-header
+{
+    border: 2px solid white;
+    display: flex;
+    border-top: none;
+    color: goldenrod;
+}
+
+div#score
+{
+    border: 2px solid white;
+    display: flex;
+    border-bottom: none;
+}
