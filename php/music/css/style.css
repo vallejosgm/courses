@@ -1,0 +1,26 @@
+html {
+    margin: 140px;
+}
+
+body {
+	background-image: url(../img/back.gif);
+	background-attachment: fixed;
+  	background-size: cover;
+}
+
+table, th, td {
+	border: 2px #2b2b2b solid;
+	color: black;
+}
+
+th,td {
+	height: 70px;
+    font-size: 40px;
+}
+
+table {
+	width: 100%;
+    background-color: wheat;
+    opacity: 0.4;
+    text-align: center;
+}

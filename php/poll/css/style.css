@@ -1,0 +1,112 @@
+:root {
+  --questionLen: 35;
+  --widthQuestion: 35ch;
+  --titleLen: 21;
+  --widthTitle: 21ch;
+   
+}
+body {
+	background-color: #eee;
+}
+
+main {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+input[type=submit] {
+	background-color: transparent;
+	font-weight: 600;
+	color: #444;
+	font-size: 1rem;
+	padding: 1rem 1.5rem;
+	border: 2px solid #eee;
+	border-radius: .5rem;
+	cursor: pointer;
+	transition: all 1s ease;
+	box-shadow: .5rem .5rem 1rem #ccc, -.5rem -.5rem 1rem #fff;
+}
+
+input[type=submit]:hover {
+	box-shadow: .5rem .5rem 1rem #fff, -.5rem -.5rem 1rem #ccc;
+}
+
+input[type=submit]:active {
+	box-shadow: inset .2rem .2rem 1rem #fff, inset -.2rem -.2rem 1rem #ccc;
+}
+
+input[type=radio]{
+	width: 13px;
+}
+
+input{
+	margin: 1rem;
+}
+
+label{
+	font-size: 25px;
+}
+
+#stat{
+	text-align: center;
+    font-size: 22px;
+    border: #008000 2px solid;
+    margin: 67px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+
+#stat td, #stat th{
+	border: 1px solid #ddd;
+  	padding: 8px;
+}
+
+#stat tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+#stat tr:hover {
+	background-color: #ddd;
+}
+
+#stat th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #008000;
+  color: white;
+}
+
+h1{
+	display: block;
+	font-family: monospace;
+	white-space: nowrap;
+	border-right: 4px solid;
+	width: var(--widthQuestion);
+
+	animation: typing 2s steps(var(--questionLen)), blink .5s infinite step-end alternate;
+
+	overflow: hidden;
+}
+
+#statTitle{
+	width: var(--widthTitle);
+
+	animation: typing 2s steps(var(--titleLen)), blink .5s infinite step-end alternate;	
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
+

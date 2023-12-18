@@ -1,0 +1,174 @@
+/*variables*/
+:root {
+  --pumpkin: #0c0c0c;
+}
+
+*{box-sizing: border-box;margin: 0;padding: 0; outline: none; transition: all 0.3s ease; animation-delay: 0s;}
+
+body {
+  background-image: url("../img/halloween.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.process {
+    background-image: none;  
+}
+
+.pagewrap {
+    width: 175px;
+    height: 60px;
+    background-color: var(--pumpkin);
+    position: relative;
+    left: -15px;
+    bottom: 120px;
+    transform: rotate(10deg);
+    z-index: 1;
+    border-radius: 100% 0% 50% 50% / 0% 0% 100% 100%;
+}
+
+.pagewrap::after {
+    content: '';
+    position: absolute;
+    background-color: var(--pumpkin);
+    top: -38px;
+    left: 233px;
+    width: 175px;
+    height: 60px;
+    transform: rotate(-20deg);
+    border-radius: 100% 0% 50% 50% / 0% 0% 100% 100%;
+}
+
+.pagewrap::before {
+    content: '';
+    position: absolute;
+    top: 120px;
+    left: 57px;
+    background-color: var(--pumpkin);
+    transform: rotate(-10deg);
+    width: 410px;
+    height: 470px;
+    clip-path: polygon(0% 35%, 17% 2%, 21% 37%, 31% 17%, 36% 32%, 49% 6%, 63% 34%, 86% 8%, 85% 30%, 100% 30%, 94% 60%, 79% 98%, 66% 62%, 63% 94%, 53% 76%, 42% 100%, 31% 62%, 17% 96%, 14% 66%);
+    animation-name: pulse;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1) rotate(-10deg);}
+  50% {transform: scale(1.1) rotate(-10deg);}
+  100% {transform: scale(1) rotate(-10deg);}
+}
+
+#face, #face:after, #face:before {
+    background-color: #ffee6a !important;
+}
+
+input[type=text] {
+	position: relative;
+    transform: rotate(-10deg);
+    top: 309px;
+    left: 121px;
+    width: 276px;
+    height: 35px;
+    background-color: #ee8036;
+    color: black;
+    font-size: 20px;
+    padding-left: 8px;
+}
+
+input[type="text"]:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #ee8036 inset;
+    -webkit-text-fill-color: black !important;
+}
+
+::placeholder {
+  color: #edef68;
+  font-size: 15px;
+  opacity: 0.7; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #edef68;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #edef68;
+}
+
+input[type=reset] {
+	width: 49%;
+    height: 100%;
+    background-color: #ac3a08;
+    color: white;
+    font-size: 17px;
+}
+
+.message-0 {
+    position: relative;
+    transform: rotate(-20deg);
+    top: -102px;
+    left: 262px;
+    color: #ffeb8e;
+    z-index: 2;
+    width: 75%;  
+}
+
+.message-1 {
+    position: relative;
+    transform: rotate(-1deg);
+    top: -65px;
+    left: 33px;
+    color: #ffeb8e;
+    width: 70%;
+}
+
+input[type=submit] {
+	width: 49%;
+    height: 100%;
+    background-color: #ac3a08;
+    color: white;
+    font-size: 17px;
+}
+
+div {
+	position: relative;
+    transform: rotate(-10deg);
+    top: 320px;
+    left: 130px;
+    width: 276px;
+    height: 35px;
+}
+
+.p1 {
+    position: relative;
+    color: black;
+    top: 13px;
+    left: 44px;
+}
+
+.p2 {
+    position: relative;
+    color: black;
+    top: -53px;
+    z-index: 2;
+    width: 70%;
+    left: 260px;
+    transform: rotate(-20deg);
+}
+
+.p3 {
+    position: relative;
+    color: black;
+    top: 273px;
+    transform: rotate(-10deg);
+    left: 133px;
+    font-size: 40px;
+    width: 280px;
+}
