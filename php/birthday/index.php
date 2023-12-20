@@ -9,7 +9,7 @@
 	<body>
 
 	<?php 
-	echo "<h1>Happy Birthday</h1>";
+	echo "<h1>Happy Birthday To You</h1>";
 	echo "<image src='./img/hb.jpg'/>";
 	?>
 	</body>
